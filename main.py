@@ -72,6 +72,7 @@ def test_pod():
     elif request.method == "POST":
         # Handle POST requests
         data = request.json  # Assuming the data is sent in JSON format
+        print(data)
         return jsonify({"message": f"Received POST request with data: {data}"})
 
 def test_pod_func():
